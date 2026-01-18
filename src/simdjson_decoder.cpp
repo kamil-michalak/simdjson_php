@@ -618,14 +618,12 @@ static simdjson_php_error_code simdjson_convert_element(simdjson::dom::element e
     // Allocate table for reusing already allocated keys
     simdjson_dedup_key_strings_init(&parser->dedup_key_strings, parser->dedup_key_strings_data);
 #endif
-    simdjson_php_error_code resp;
     if (associative) {
         simdjson_create_array(parser, element, return_value);
-        resp = simdjson::SUCCESS;
+        return simdjson::SUCCESS;
     } else {
-        resp = simdjson_create_object(parser, element, return_value);
+        return simdjson_create_object(parser, element, return_value);
     }
-    return resp;
 }
 
 static simdjson_php_error_code simdjson_ondemand_validate(simdjson::ondemand::value element, size_t max_depth) {
