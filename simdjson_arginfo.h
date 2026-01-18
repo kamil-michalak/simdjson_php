@@ -91,7 +91,7 @@ ZEND_END_ARG_INFO()
 #if (PHP_VERSION_ID >= 80400)
 ZEND_FRAMELESS_FUNCTION(simdjson_is_valid_utf8, 1);
 static const zend_frameless_function_info frameless_function_infos_simdjson_is_valid_utf8[] = {
-	{ ZEND_FRAMELESS_FUNCTION_NAME(simdjson_is_valid_utf8, 1), 1 },
+	{ (void*)ZEND_FRAMELESS_FUNCTION_NAME(simdjson_is_valid_utf8, 1), 1 },
 	{ 0 },
 };
 #endif
@@ -99,7 +99,7 @@ static const zend_frameless_function_info frameless_function_infos_simdjson_is_v
 #if (PHP_VERSION_ID >= 80400)
 ZEND_FRAMELESS_FUNCTION(simdjson_utf8_len, 1);
 static const zend_frameless_function_info frameless_function_infos_simdjson_utf8_len[] = {
-	{ ZEND_FRAMELESS_FUNCTION_NAME(simdjson_utf8_len, 1), 1 },
+	{ (void*)ZEND_FRAMELESS_FUNCTION_NAME(simdjson_utf8_len, 1), 1 },
 	{ 0 },
 };
 #endif
@@ -107,7 +107,7 @@ static const zend_frameless_function_info frameless_function_infos_simdjson_utf8
 #if (PHP_VERSION_ID >= 80400)
 ZEND_FRAMELESS_FUNCTION(simdjson_base64_decode, 1);
 static const zend_frameless_function_info frameless_function_infos_simdjson_base64_decode[] = {
-	{ ZEND_FRAMELESS_FUNCTION_NAME(simdjson_base64_decode, 1), 1 },
+	{ (void*)ZEND_FRAMELESS_FUNCTION_NAME(simdjson_base64_decode, 1), 1 },
 	{ 0 },
 };
 #endif
@@ -115,7 +115,7 @@ static const zend_frameless_function_info frameless_function_infos_simdjson_base
 #if (PHP_VERSION_ID >= 80400)
 ZEND_FRAMELESS_FUNCTION(simdjson_base64_encode, 1);
 static const zend_frameless_function_info frameless_function_infos_simdjson_base64_encode[] = {
-	{ ZEND_FRAMELESS_FUNCTION_NAME(simdjson_base64_encode, 1), 1 },
+	{ (void*)ZEND_FRAMELESS_FUNCTION_NAME(simdjson_base64_encode, 1), 1 },
 	{ 0 },
 };
 #endif
