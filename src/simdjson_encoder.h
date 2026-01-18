@@ -37,7 +37,7 @@ struct _simdjson_encoder {
     php_stream *stream;
 };
 
-// max lenght of escaped string is 6 chars, but we coping 8 bytes is faster on 64 platforms
+// max length of escaped string is 6 chars, but we coping 8 bytes is faster on 64 platforms
 #define SIMDJSON_ENCODER_ESCAPE_LENGTH 8
 
 typedef struct {

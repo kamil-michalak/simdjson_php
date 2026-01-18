@@ -24,36 +24,6 @@
 #endif
 #endif // #ifndef ZEND_FALLTHROUGH
 
-#if PHP_VERSION_ID < 80100
-/* Check if an array is a list */
-static int zend_array_is_list(HashTable *myht) {
-    int i;
-    i = myht ? zend_hash_num_elements(myht) : 0;
-    if (i > 0) {
-        zend_string *key;
-        zend_ulong index, idx;
-
-        if (HT_IS_PACKED(myht) && HT_IS_WITHOUT_HOLES(myht)) {
-            return 1;
-        }
-
-        idx = 0;
-        ZEND_HASH_FOREACH_KEY(myht, index, key) {
-            if (key) {
-                return 0;
-            } else {
-                if (index != idx) {
-                    return 0;
-                }
-            }
-            idx++;
-        } ZEND_HASH_FOREACH_END();
-    }
-
-    return 1;
-}
-#endif
-
 #if PHP_VERSION_ID < 80200
 static zend_always_inline bool zend_string_equals_cstr(const zend_string *s1, const char *s2, size_t s2_length) {
     return ZSTR_LEN(s1) == s2_length && !memcmp(ZSTR_VAL(s1), s2, s2_length);
