@@ -1,5 +1,5 @@
 /* This is a generated file, edit the .stub.php file instead.
- * Stub hash: 2d27ab9518f0dcbc3439f69fa211cf232cee8598 */
+ * Stub hash: ec8a0fc5d7dc67c200e6def3e324985ff9d5388d */
 
 ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_simdjson_validate, 0, 1, _IS_BOOL, 0)
 	ZEND_ARG_TYPE_INFO(0, json, IS_STRING, 0)
@@ -73,6 +73,7 @@ ZEND_END_ARG_INFO()
 ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_simdjson_base64_encode, 0, 1, IS_STRING, 0)
 	ZEND_ARG_TYPE_INFO(0, string, IS_STRING, 0)
 	ZEND_ARG_TYPE_INFO_WITH_DEFAULT_VALUE(0, url, _IS_BOOL, 0, "false")
+	ZEND_ARG_TYPE_INFO_WITH_DEFAULT_VALUE(0, line_length, IS_LONG, 0, "0")
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(arginfo_class_SimdJsonBase64Encode___construct, 0, 0, 1)
@@ -90,7 +91,7 @@ ZEND_END_ARG_INFO()
 #if (PHP_VERSION_ID >= 80400)
 ZEND_FRAMELESS_FUNCTION(simdjson_is_valid_utf8, 1);
 static const zend_frameless_function_info frameless_function_infos_simdjson_is_valid_utf8[] = {
-	{ (void*)ZEND_FRAMELESS_FUNCTION_NAME(simdjson_is_valid_utf8, 1), 1 },
+	{ ZEND_FRAMELESS_FUNCTION_NAME(simdjson_is_valid_utf8, 1), 1 },
 	{ 0 },
 };
 #endif
@@ -98,7 +99,7 @@ static const zend_frameless_function_info frameless_function_infos_simdjson_is_v
 #if (PHP_VERSION_ID >= 80400)
 ZEND_FRAMELESS_FUNCTION(simdjson_utf8_len, 1);
 static const zend_frameless_function_info frameless_function_infos_simdjson_utf8_len[] = {
-	{ (void*)ZEND_FRAMELESS_FUNCTION_NAME(simdjson_utf8_len, 1), 1 },
+	{ ZEND_FRAMELESS_FUNCTION_NAME(simdjson_utf8_len, 1), 1 },
 	{ 0 },
 };
 #endif
@@ -106,7 +107,7 @@ static const zend_frameless_function_info frameless_function_infos_simdjson_utf8
 #if (PHP_VERSION_ID >= 80400)
 ZEND_FRAMELESS_FUNCTION(simdjson_base64_decode, 1);
 static const zend_frameless_function_info frameless_function_infos_simdjson_base64_decode[] = {
-	{ (void*)ZEND_FRAMELESS_FUNCTION_NAME(simdjson_base64_decode, 1), 1 },
+	{ ZEND_FRAMELESS_FUNCTION_NAME(simdjson_base64_decode, 1), 1 },
 	{ 0 },
 };
 #endif
@@ -114,7 +115,7 @@ static const zend_frameless_function_info frameless_function_infos_simdjson_base
 #if (PHP_VERSION_ID >= 80400)
 ZEND_FRAMELESS_FUNCTION(simdjson_base64_encode, 1);
 static const zend_frameless_function_info frameless_function_infos_simdjson_base64_encode[] = {
-	{ (void*)ZEND_FRAMELESS_FUNCTION_NAME(simdjson_base64_encode, 1), 1 },
+	{ ZEND_FRAMELESS_FUNCTION_NAME(simdjson_base64_encode, 1), 1 },
 	{ 0 },
 };
 #endif
@@ -305,9 +306,7 @@ static zend_class_entry *register_class_SimdJsonBase64Encode(zend_class_entry *c
 
 	zval property_string_default_value;
 	ZVAL_UNDEF(&property_string_default_value);
-	zend_string *property_string_name = zend_string_init("string", sizeof("string") - 1, 1);
-	zend_declare_typed_property(class_entry, property_string_name, &property_string_default_value, ZEND_ACC_PRIVATE, NULL, (zend_type) ZEND_TYPE_INIT_MASK(MAY_BE_STRING));
-	zend_string_release(property_string_name);
+	zend_declare_typed_property(class_entry, ZSTR_KNOWN(ZEND_STR_STRING), &property_string_default_value, ZEND_ACC_PRIVATE, NULL, (zend_type) ZEND_TYPE_INIT_MASK(MAY_BE_STRING));
 
 	zval property_base64url_default_value;
 	ZVAL_FALSE(&property_base64url_default_value);
