@@ -410,8 +410,9 @@ function simdjson_base64_decode(string $string, bool $strict = false, bool $url 
 /**
  * @param string $string
  * @param bool $url Use base64url encoding according to RFC 4648 §5
+ * @param int $line_length
  * @return string
  * @compile-time-eval
  * @frameless-function {"arity": 1}
  */
-function simdjson_base64_encode(string $string, bool $url = false): string {}
+function simdjson_base64_encode(string $string, bool $url = false, int $line_length = 0): string {}

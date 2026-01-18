@@ -729,14 +729,27 @@ PHP_METHOD(SimdJsonBase64Encode, jsonSerialize) {
 PHP_FUNCTION(simdjson_base64_encode) {
     zend_string *str;
     bool url = false;
+    zend_long line_length = 0;
+    zend_string *output_string;
 
-    ZEND_PARSE_PARAMETERS_START(1, 2)
+    ZEND_PARSE_PARAMETERS_START(1, 3)
         Z_PARAM_STR(str)
         Z_PARAM_OPTIONAL
         Z_PARAM_BOOL(url)
+        Z_PARAM_LONG(line_length)
     ZEND_PARSE_PARAMETERS_END();
 
-    zend_string *output_string = simdjson_base64_encode(str, url);
+    if (UNEXPECTED(line_length)) {
+        auto options = url ? simdutf::base64_url : simdutf::base64_default;
+        size_t encoded_length = simdutf::base64_length_from_binary_with_lines(ZSTR_LEN(str), options, line_length);
+        output_string = zend_string_alloc(encoded_length, 0);
+        simdutf::binary_to_base64_with_lines(ZSTR_VAL(str), ZSTR_LEN(str), ZSTR_VAL(output_string), line_length, options);
+        ZSTR_VAL(output_string)[encoded_length] = '\0';
+        GC_ADD_FLAGS(output_string, IS_STR_VALID_UTF8); // base64 encoded string must be always valid UTF-8 string
+    } else {
+        output_string = simdjson_base64_encode(str, url);
+    }
+
     RETURN_NEW_STR(output_string);
 }
 
