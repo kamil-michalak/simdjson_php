@@ -739,7 +739,12 @@ PHP_FUNCTION(simdjson_base64_encode) {
         Z_PARAM_LONG(line_length)
     ZEND_PARSE_PARAMETERS_END();
 
-    if (UNEXPECTED(line_length)) {
+    if (UNEXPECTED(line_length != 0)) {
+        if (line_length < 0) {
+            zend_argument_value_error(3, "must be greater than 0");
+            RETURN_THROWS();
+        }
+
         auto options = url ? simdutf::base64_url : simdutf::base64_default;
         size_t encoded_length = simdutf::base64_length_from_binary_with_lines(ZSTR_LEN(str), options, line_length);
         output_string = zend_string_alloc(encoded_length, 0);
