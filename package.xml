@@ -46,6 +46,7 @@
    <dir name="src">
     <file name="simdjson.cpp" role="src"/>
     <file name="simdjson.h" role="src"/>
+    <file name="simdjson_compatibility.h" role="src"/>
    </dir>
    <dir name="tests">
     <file name="32bit_support.phpt" role="test"/>
