@@ -34,187 +34,187 @@
 <contents>
 <dir name="/">
 <!--  Documentation files  -->
-<file md5sum="@md5sum@" name="CREDITS" role="doc"/>
-<file md5sum="@md5sum@" name="LICENSE" role="doc"/>
-<file md5sum="@md5sum@" name="README.md" role="doc"/>
-<file md5sum="@md5sum@" name="composer.json" role="doc"/>
+<file name="CREDITS" role="doc"/>
+<file name="LICENSE" role="doc"/>
+<file name="README.md" role="doc"/>
+<file name="composer.json" role="doc"/>
 <!--  Build configuration files  -->
-<file md5sum="@md5sum@" name="config.m4" role="src"/>
-<file md5sum="@md5sum@" name="config.w32" role="src"/>
-<file md5sum="@md5sum@" name="CMakeLists.txt" role="src"/>
+<file name="config.m4" role="src"/>
+<file name="config.w32" role="src"/>
+<file name="CMakeLists.txt" role="src"/>
 <!--  Main source files  -->
-<file md5sum="@md5sum@" name="php_simdjson.cpp" role="src"/>
-<file md5sum="@md5sum@" name="php_simdjson.h" role="src"/>
-<file md5sum="@md5sum@" name="simdjson.stub.php" role="src"/>
-<file md5sum="@md5sum@" name="simdjson_arginfo.h" role="src"/>
+<file name="php_simdjson.cpp" role="src"/>
+<file name="php_simdjson.h" role="src"/>
+<file name="simdjson.stub.php" role="src"/>
+<file name="simdjson_arginfo.h" role="src"/>
 <!--  Docker files  -->
-<file md5sum="@md5sum@" name="docker-alpine" role="doc"/>
-<file md5sum="@md5sum@" name="docker-dev" role="doc"/>
-<file md5sum="@md5sum@" name=".dockerignore" role="doc"/>
-<file md5sum="@md5sum@" name=".editorconfig" role="doc"/>
+<file name="docker-alpine" role="doc"/>
+<file name="docker-dev" role="doc"/>
+<file name=".dockerignore" role="doc"/>
+<file name=".editorconfig" role="doc"/>
 <!--  Benchmark configuration  -->
-<file md5sum="@md5sum@" name="phpbench.json.dist" role="doc"/>
+<file name="phpbench.json.dist" role="doc"/>
 <!--  GitHub workflows  -->
 <dir name=".github">
 <dir name="workflows">
-<file md5sum="@md5sum@" name="integration.yml" role="doc"/>
+<file name="integration.yml" role="doc"/>
 </dir>
 </dir>
 <!--  Source directory - simdjson C++ library and encoder files  -->
 <dir name="src">
 <!--  Core simdjson library  -->
-<file md5sum="@md5sum@" name="simdjson.cpp" role="src"/>
-<file md5sum="@md5sum@" name="simdjson.h" role="src"/>
-<file md5sum="@md5sum@" name="simdjson_avx2.h" role="src"/>
-<file md5sum="@md5sum@" name="simdjson_compatibility.h" role="src"/>
+<file name="simdjson.cpp" role="src"/>
+<file name="simdjson.h" role="src"/>
+<file name="simdjson_avx2.h" role="src"/>
+<file name="simdjson_compatibility.h" role="src"/>
 <!--  Decoder  -->
-<file md5sum="@md5sum@" name="simdjson_decoder.cpp" role="src"/>
-<file md5sum="@md5sum@" name="simdjson_decoder_defs.h" role="src"/>
+<file name="simdjson_decoder.cpp" role="src"/>
+<file name="simdjson_decoder_defs.h" role="src"/>
 <!--  Encoder  -->
-<file md5sum="@md5sum@" name="simdjson_encoder.cpp" role="src"/>
-<file md5sum="@md5sum@" name="simdjson_encoder.h" role="src"/>
+<file name="simdjson_encoder.cpp" role="src"/>
+<file name="simdjson_encoder.h" role="src"/>
 <!--  Supporting files  -->
-<file md5sum="@md5sum@" name="simdjson_smart_str.h" role="src"/>
-<file md5sum="@md5sum@" name="simdjson_vector8.h" role="src"/>
-<file md5sum="@md5sum@" name="countlut.cpp" role="src"/>
-<file md5sum="@md5sum@" name="countlut.h" role="src"/>
+<file name="simdjson_smart_str.h" role="src"/>
+<file name="simdjson_vector8.h" role="src"/>
+<file name="countlut.cpp" role="src"/>
+<file name="countlut.h" role="src"/>
 <!--  simdutf library  -->
-<file md5sum="@md5sum@" name="simdutf.cpp" role="src"/>
-<file md5sum="@md5sum@" name="simdutf.h" role="src"/>
+<file name="simdutf.cpp" role="src"/>
+<file name="simdutf.h" role="src"/>
 </dir>
 <!--  Test files  -->
 <dir name="tests">
 <!--  Main test files  -->
-<file md5sum="@md5sum@" name="32bit_support.phpt" role="test"/>
-<file md5sum="@md5sum@" name="64bit_support.phpt" role="test"/>
-<file md5sum="@md5sum@" name="decode_args.phpt" role="test"/>
-<file md5sum="@md5sum@" name="decode_duplicate_key.phpt" role="test"/>
-<file md5sum="@md5sum@" name="decode_encode.phpt" role="test"/>
-<file md5sum="@md5sum@" name="decode_exception.phpt" role="test"/>
-<file md5sum="@md5sum@" name="decode_integer_overflow.phpt" role="test"/>
-<file md5sum="@md5sum@" name="decode_invalid_property.phpt" role="test"/>
-<file md5sum="@md5sum@" name="decode_max_depth.phpt" role="test"/>
-<file md5sum="@md5sum@" name="decode_max_depth_memory_reduction.phpt" role="test"/>
-<file md5sum="@md5sum@" name="decode_repeat.phpt" role="test"/>
-<file md5sum="@md5sum@" name="decode_repeated.phpt" role="test"/>
-<file md5sum="@md5sum@" name="decode_repeated2.phpt" role="test"/>
-<file md5sum="@md5sum@" name="decode_repeated3.phpt" role="test"/>
-<file md5sum="@md5sum@" name="decode_result.phpt" role="test"/>
-<file md5sum="@md5sum@" name="decode_simple_values.phpt" role="test"/>
-<file md5sum="@md5sum@" name="decode_simple_values_opcache.phpt" role="test"/>
-<file md5sum="@md5sum@" name="decode_stream.phpt" role="test"/>
-<file md5sum="@md5sum@" name="decode_strict_types.phpt" role="test"/>
-<file md5sum="@md5sum@" name="decode_types.phpt" role="test"/>
-<file md5sum="@md5sum@" name="depth.phpt" role="test"/>
-<file md5sum="@md5sum@" name="dump.inc" role="test"/>
-<file md5sum="@md5sum@" name="is_valid.phpt" role="test"/>
-<file md5sum="@md5sum@" name="is_valid_args.phpt" role="test"/>
-<file md5sum="@md5sum@" name="is_valid_depth.phpt" role="test"/>
-<file md5sum="@md5sum@" name="key_count.phpt" role="test"/>
-<file md5sum="@md5sum@" name="key_count_args.phpt" role="test"/>
-<file md5sum="@md5sum@" name="key_count_exception.phpt" role="test"/>
-<file md5sum="@md5sum@" name="key_count_large.phpt" role="test"/>
-<file md5sum="@md5sum@" name="key_exists.phpt" role="test"/>
-<file md5sum="@md5sum@" name="key_exists_args.phpt" role="test"/>
-<file md5sum="@md5sum@" name="key_value_args.phpt" role="test"/>
-<file md5sum="@md5sum@" name="key_value_deep_string.phpt" role="test"/>
-<file md5sum="@md5sum@" name="key_value_exception.phpt" role="test"/>
-<file md5sum="@md5sum@" name="key_value_int.phpt" role="test"/>
-<file md5sum="@md5sum@" name="key_value_result.phpt" role="test"/>
-<file md5sum="@md5sum@" name="key_value_slash.phpt" role="test"/>
-<file md5sum="@md5sum@" name="test_parsing.phpt" role="test"/>
-<file md5sum="@md5sum@" name="uint64_overflow.phpt" role="test"/>
+<file name="32bit_support.phpt" role="test"/>
+<file name="64bit_support.phpt" role="test"/>
+<file name="decode_args.phpt" role="test"/>
+<file name="decode_duplicate_key.phpt" role="test"/>
+<file name="decode_encode.phpt" role="test"/>
+<file name="decode_exception.phpt" role="test"/>
+<file name="decode_integer_overflow.phpt" role="test"/>
+<file name="decode_invalid_property.phpt" role="test"/>
+<file name="decode_max_depth.phpt" role="test"/>
+<file name="decode_max_depth_memory_reduction.phpt" role="test"/>
+<file name="decode_repeat.phpt" role="test"/>
+<file name="decode_repeated.phpt" role="test"/>
+<file name="decode_repeated2.phpt" role="test"/>
+<file name="decode_repeated3.phpt" role="test"/>
+<file name="decode_result.phpt" role="test"/>
+<file name="decode_simple_values.phpt" role="test"/>
+<file name="decode_simple_values_opcache.phpt" role="test"/>
+<file name="decode_stream.phpt" role="test"/>
+<file name="decode_strict_types.phpt" role="test"/>
+<file name="decode_types.phpt" role="test"/>
+<file name="depth.phpt" role="test"/>
+<file name="dump.inc" role="test"/>
+<file name="is_valid.phpt" role="test"/>
+<file name="is_valid_args.phpt" role="test"/>
+<file name="is_valid_depth.phpt" role="test"/>
+<file name="key_count.phpt" role="test"/>
+<file name="key_count_args.phpt" role="test"/>
+<file name="key_count_exception.phpt" role="test"/>
+<file name="key_count_large.phpt" role="test"/>
+<file name="key_exists.phpt" role="test"/>
+<file name="key_exists_args.phpt" role="test"/>
+<file name="key_value_args.phpt" role="test"/>
+<file name="key_value_deep_string.phpt" role="test"/>
+<file name="key_value_exception.phpt" role="test"/>
+<file name="key_value_int.phpt" role="test"/>
+<file name="key_value_result.phpt" role="test"/>
+<file name="key_value_slash.phpt" role="test"/>
+<file name="test_parsing.phpt" role="test"/>
+<file name="uint64_overflow.phpt" role="test"/>
 <!--  Test subdirectories  -->
 <dir name="_files">
-<file md5sum="@md5sum@" name="pass_4byte_utf8.json" role="test"/>
-<file md5sum="@md5sum@" name="pass_truncate_double.json" role="test"/>
+<file name="pass_4byte_utf8.json" role="test"/>
+<file name="pass_truncate_double.json" role="test"/>
 </dir>
 <dir name="base64">
-<file md5sum="@md5sum@" name="base64_decode_basic_001.phpt" role="test"/>
-<file md5sum="@md5sum@" name="base64_encode_basic_001.phpt" role="test"/>
-<file md5sum="@md5sum@" name="base64_encode_basic_002.phpt" role="test"/>
-<file md5sum="@md5sum@" name="base64_encode_from_stream.phpt" role="test"/>
-<file md5sum="@md5sum@" name="base64_encode_line_length.phpt" role="test"/>
-<file md5sum="@md5sum@" name="base64_loop_001.phpt" role="test"/>
+<file name="base64_decode_basic_001.phpt" role="test"/>
+<file name="base64_encode_basic_001.phpt" role="test"/>
+<file name="base64_encode_basic_002.phpt" role="test"/>
+<file name="base64_encode_from_stream.phpt" role="test"/>
+<file name="base64_encode_line_length.phpt" role="test"/>
+<file name="base64_loop_001.phpt" role="test"/>
 </dir>
 <dir name="compat">
-<file md5sum="@md5sum@" name="001.phpt" role="test"/>
-<file md5sum="@md5sum@" name="bug41067.phpt" role="test"/>
-<file md5sum="@md5sum@" name="bug41504.phpt" role="test"/>
-<file md5sum="@md5sum@" name="bug45791.phpt" role="test"/>
-<file md5sum="@md5sum@" name="bug47644.phpt" role="test"/>
-<file md5sum="@md5sum@" name="bug50224.phpt" role="test"/>
-<file md5sum="@md5sum@" name="bug62010.phpt" role="test"/>
-<file md5sum="@md5sum@" name="bug64874_part1.phpt" role="test"/>
-<file md5sum="@md5sum@" name="bug64874_part2.phpt" role="test"/>
-<file md5sum="@md5sum@" name="bug68546.phpt" role="test"/>
-<file md5sum="@md5sum@" name="bug68817.phpt" role="test"/>
-<file md5sum="@md5sum@" name="bug68938.phpt" role="test"/>
-<file md5sum="@md5sum@" name="bug69187.phpt" role="test"/>
-<file md5sum="@md5sum@" name="fail001.phpt" role="test"/>
-<file md5sum="@md5sum@" name="json_decode_basic.phpt" role="test"/>
-<file md5sum="@md5sum@" name="json_decode_invalid_utf8.phpt" role="test"/>
-<file md5sum="@md5sum@" name="pass001.1.phpt" role="test"/>
-<file md5sum="@md5sum@" name="pass001.1_64bit.phpt" role="test"/>
-<file md5sum="@md5sum@" name="pass001.phpt" role="test"/>
-<file md5sum="@md5sum@" name="pass002.phpt" role="test"/>
-<file md5sum="@md5sum@" name="pass003.phpt" role="test"/>
+<file name="001.phpt" role="test"/>
+<file name="bug41067.phpt" role="test"/>
+<file name="bug41504.phpt" role="test"/>
+<file name="bug45791.phpt" role="test"/>
+<file name="bug47644.phpt" role="test"/>
+<file name="bug50224.phpt" role="test"/>
+<file name="bug62010.phpt" role="test"/>
+<file name="bug64874_part1.phpt" role="test"/>
+<file name="bug64874_part2.phpt" role="test"/>
+<file name="bug68546.phpt" role="test"/>
+<file name="bug68817.phpt" role="test"/>
+<file name="bug68938.phpt" role="test"/>
+<file name="bug69187.phpt" role="test"/>
+<file name="fail001.phpt" role="test"/>
+<file name="json_decode_basic.phpt" role="test"/>
+<file name="json_decode_invalid_utf8.phpt" role="test"/>
+<file name="pass001.1.phpt" role="test"/>
+<file name="pass001.1_64bit.phpt" role="test"/>
+<file name="pass001.phpt" role="test"/>
+<file name="pass002.phpt" role="test"/>
+<file name="pass003.phpt" role="test"/>
 </dir>
 <dir name="encode">
-<file md5sum="@md5sum@" name="bug40503.phpt" role="test"/>
-<file md5sum="@md5sum@" name="bug41034.phpt" role="test"/>
-<file md5sum="@md5sum@" name="bug41067.phpt" role="test"/>
-<file md5sum="@md5sum@" name="bug41567.phpt" role="test"/>
-<file md5sum="@md5sum@" name="bug42785.phpt" role="test"/>
-<file md5sum="@md5sum@" name="bug43941.phpt" role="test"/>
-<file md5sum="@md5sum@" name="simdjson_base64_encode.phpt" role="test"/>
-<file md5sum="@md5sum@" name="simdjson_base64_encode_null.phpt" role="test"/>
-<file md5sum="@md5sum@" name="simdjson_encode_append_newline.phpt" role="test"/>
-<file md5sum="@md5sum@" name="simdjson_encode_basic.phpt" role="test"/>
-<file md5sum="@md5sum@" name="simdjson_encode_class.phpt" role="test"/>
-<file md5sum="@md5sum@" name="simdjson_encode_compare.phpt" role="test"/>
-<file md5sum="@md5sum@" name="simdjson_encode_enum.phpt" role="test"/>
-<file md5sum="@md5sum@" name="simdjson_encode_escape.phpt" role="test"/>
-<file md5sum="@md5sum@" name="simdjson_encode_escape_long.phpt" role="test"/>
-<file md5sum="@md5sum@" name="simdjson_encode_invalid_utf8.phpt" role="test"/>
-<file md5sum="@md5sum@" name="simdjson_encode_invalid_utf8_2.phpt" role="test"/>
-<file md5sum="@md5sum@" name="simdjson_encode_lazy.phpt" role="test"/>
-<file md5sum="@md5sum@" name="simdjson_encode_numeric.phpt" role="test"/>
-<file md5sum="@md5sum@" name="simdjson_encode_pretty_print.phpt" role="test"/>
-<file md5sum="@md5sum@" name="simdjson_encode_pretty_print2.phpt" role="test"/>
-<file md5sum="@md5sum@" name="simdjson_encode_pretty_print3.phpt" role="test"/>
-<file md5sum="@md5sum@" name="simdjson_encode_recursion_01.phpt" role="test"/>
-<file md5sum="@md5sum@" name="simdjson_encode_recursion_02.phpt" role="test"/>
-<file md5sum="@md5sum@" name="simdjson_encode_recursion_03.phpt" role="test"/>
-<file md5sum="@md5sum@" name="simdjson_encode_recursion_04.phpt" role="test"/>
-<file md5sum="@md5sum@" name="simdjson_encode_recursion_05.phpt" role="test"/>
-<file md5sum="@md5sum@" name="simdjson_encode_recursion_06.phpt" role="test"/>
-<file md5sum="@md5sum@" name="unsupported_type_error.phpt" role="test"/>
+<file name="bug40503.phpt" role="test"/>
+<file name="bug41034.phpt" role="test"/>
+<file name="bug41067.phpt" role="test"/>
+<file name="bug41567.phpt" role="test"/>
+<file name="bug42785.phpt" role="test"/>
+<file name="bug43941.phpt" role="test"/>
+<file name="simdjson_base64_encode.phpt" role="test"/>
+<file name="simdjson_base64_encode_null.phpt" role="test"/>
+<file name="simdjson_encode_append_newline.phpt" role="test"/>
+<file name="simdjson_encode_basic.phpt" role="test"/>
+<file name="simdjson_encode_class.phpt" role="test"/>
+<file name="simdjson_encode_compare.phpt" role="test"/>
+<file name="simdjson_encode_enum.phpt" role="test"/>
+<file name="simdjson_encode_escape.phpt" role="test"/>
+<file name="simdjson_encode_escape_long.phpt" role="test"/>
+<file name="simdjson_encode_invalid_utf8.phpt" role="test"/>
+<file name="simdjson_encode_invalid_utf8_2.phpt" role="test"/>
+<file name="simdjson_encode_lazy.phpt" role="test"/>
+<file name="simdjson_encode_numeric.phpt" role="test"/>
+<file name="simdjson_encode_pretty_print.phpt" role="test"/>
+<file name="simdjson_encode_pretty_print2.phpt" role="test"/>
+<file name="simdjson_encode_pretty_print3.phpt" role="test"/>
+<file name="simdjson_encode_recursion_01.phpt" role="test"/>
+<file name="simdjson_encode_recursion_02.phpt" role="test"/>
+<file name="simdjson_encode_recursion_03.phpt" role="test"/>
+<file name="simdjson_encode_recursion_04.phpt" role="test"/>
+<file name="simdjson_encode_recursion_05.phpt" role="test"/>
+<file name="simdjson_encode_recursion_06.phpt" role="test"/>
+<file name="unsupported_type_error.phpt" role="test"/>
 </dir>
 </dir>
 <!--  Benchmark files  -->
 <dir name="benchmark">
-<file md5sum="@md5sum@" name="TwitterDecodeBench.php" role="doc"/>
-<file md5sum="@md5sum@" name="TwitterEncoderBench.php" role="doc"/>
+<file name="TwitterDecodeBench.php" role="doc"/>
+<file name="TwitterEncoderBench.php" role="doc"/>
 </dir>
 <!--  JSON examples  -->
 <dir name="jsonexamples">
-<file md5sum="@md5sum@" name="twitter.json" role="doc"/>
-<file md5sum="@md5sum@" name="apache_builds.json" role="doc"/>
-<file md5sum="@md5sum@" name="canada.json" role="doc"/>
-<file md5sum="@md5sum@" name="citm_catalog.json" role="doc"/>
-<file md5sum="@md5sum@" name="github_events.json" role="doc"/>
-<file md5sum="@md5sum@" name="gsoc-2018.json" role="doc"/>
-<file md5sum="@md5sum@" name="instruments.json" role="doc"/>
-<file md5sum="@md5sum@" name="marine_ik.json" role="doc"/>
-<file md5sum="@md5sum@" name="mesh.json" role="doc"/>
-<file md5sum="@md5sum@" name="numbers.json" role="doc"/>
-<file md5sum="@md5sum@" name="random.json" role="doc"/>
-<file md5sum="@md5sum@" name="update-center.json" role="doc"/>
+<file name="twitter.json" role="doc"/>
+<file name="apache_builds.json" role="doc"/>
+<file name="canada.json" role="doc"/>
+<file name="citm_catalog.json" role="doc"/>
+<file name="github_events.json" role="doc"/>
+<file name="gsoc-2018.json" role="doc"/>
+<file name="instruments.json" role="doc"/>
+<file name="marine_ik.json" role="doc"/>
+<file name="mesh.json" role="doc"/>
+<file name="numbers.json" role="doc"/>
+<file name="random.json" role="doc"/>
+<file name="update-center.json" role="doc"/>
 </dir>
 <!--  Scripts  -->
 <dir name="scripts">
-<file md5sum="@md5sum@" name="update-simdjson.sh" role="doc"/>
+<file name="update-simdjson.sh" role="doc"/>
 </dir>
 </dir>
 </contents>
