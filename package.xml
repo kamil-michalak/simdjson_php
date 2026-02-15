@@ -44,8 +44,6 @@
    <file name="simdjson.stub.php" role="src"/>
    <file name="simdjson_arginfo.h" role="src"/>
    <dir name="src">
-    <file name="simdjson_bindings.cpp" role="src"/>
-    <file name="simdjson_bindings_defs.h" role="src"/>
     <file name="simdjson.cpp" role="src"/>
     <file name="simdjson.h" role="src"/>
    </dir>
